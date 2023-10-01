@@ -24,3 +24,7 @@ body {
     height: 32px;
     margin-bottom: 6px !important;
 }
+
+.bi-list, .sandwich-menu-button{
+    color: white !important;
+}
