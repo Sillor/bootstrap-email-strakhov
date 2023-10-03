@@ -18,7 +18,7 @@
 
 <body>
   <div class="container-fluid mt-2 mb-2">
-    <div class="row align-items-center">
+    <div class="row align-items-center justify-content-center justify-content-md-start">
       <div class="col-auto d-none d-md-block">
         <!-- Logo -->
         <img src="media/logo.svg" alt="MailRipple logo">
@@ -37,25 +37,25 @@
   </div>
 
   <!-- main content -->
-  <div class="container-fluid">
+  <div class="container-fluid ps-4 pe-4 p-sm-3 pt-sm-0">
     <div class="row">
       <!-- button side menu -->
       <div class="col-2 d-none d-md-block align-items-center button-menu">
-        <button class="btn rounded-5 w-100">Compose</button>
         <button class="btn rounded-5 w-100">Inbox</button>
         <button class="btn rounded-5 w-100">Sent</button>
         <button class="btn rounded-5 w-100">Spam</button>
         <button class="btn rounded-5 w-100">Trash</button>
+        <button class="btn rounded-5 w-100 mt-3 btn-primary">Compose</button>
       </div>
 
       <!-- navbar links -->
       <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
         <ul class="navbar-nav">
-          <button class="btn rounded-5 w-100 sandwich-menu-button">Compose</button>
           <button class="btn rounded-5 w-100 sandwich-menu-button">Inbox</button>
           <button class="btn rounded-5 w-100 sandwich-menu-button">Sent</button>
           <button class="btn rounded-5 w-100 sandwich-menu-button">Spam</button>
           <button class="btn rounded-5 w-100 sandwich-menu-button">Trash</button>
+          <button class="btn rounded-5 w-100 sandwich-menu-button mb-3 mt-3 btn-primary">Compose</button>
         </ul>
       </div>
 
@@ -66,6 +66,15 @@
             <h4 class="card-title">🚀 Stay Informed and Inspired</h4>
             <h6 class="card-subtitle mb-2 text-muted">From: sender@example.com</h6>
             <p class="card-text">Explore the latest updates and insights that will ignite your curiosity and drive.</p>
+          </div>
+        </div>
+
+        <div class="card mb-2 shadow ">
+          <div class="card-body">
+            <h4 class="card-title">🍪 Help Needed for Cookie Chaos!</h4>
+            <h6 class="card-subtitle mb-2 text-muted">From: ilovecookies@example.com</h6>
+            <p class="card-text mb-2">I'm in a bit of a cookie crisis here and could really use your help...</p>
+            <button type="button" class="btn btn-primary d-none d-md-block"><i class="bi bi-reply"></i> Reply</button>
           </div>
         </div>
 
@@ -84,7 +93,7 @@
             <p class="card-text">Stay updated with our handpicked articles and stories.</p>
           </div>
         </div>
-        
+
         <div class="card mb-2 shadow">
           <div class="card-body">
             <h4 class="card-title">🌴 Plan Your Dream Vacation</h4>
@@ -99,11 +108,26 @@
             <h6 class="card-subtitle mb-2 text-muted">From: creativity@example.com</h6>
             <p class="card-text">Explore the world of art, design, and innovation to spark your creativity.</p>
           </div>
-        </div>        
+        </div>
       </div>
 
       <!-- opened email example -->
-      <div class="col d-none d-lg-block opened-email rounded-3 me-3">
+      <div class="col d-none d-lg-block opened-email rounded-3 me-3 p-4">
+        <div class="row">
+          <h4>From: ilovecookies@example.com</h4>
+          <h4>Subject: Help Needed for Cookie Chaos!</h4>
+        </div>
+
+        <div class="row m-5">
+          <p>Hi Ipsum Lorem,<br><br>I'm in a bit of a cookie crisis here and could really use your help. I was trying to bake
+            cookies, but they turned out like strange, misshapen blobs that don't even taste good.<br><br>I thought, who better
+            to rescue me from this cookie catastrophe than you, the cookie expert? So, I'm reaching out to ask if you
+            can come over and save the day. We'll have a good laugh, and hopefully, you can show me how to make cookies
+            that actually look and taste good.<br><br>I've got all the cookie ingredients ready, and we can turn my kitchen
+            into a cookie workshop. It'll be a fun time, and I promise not to take ourselves too seriously.<br><br>Please let
+            me know if you can swing by and help me out. I'd really appreciate it!<br><br>Looking forward to your cookie
+            expertise,<br><br>Lorem Ipsum<br><br>P.S. Bring your appetite, and we'll taste-test our way through this!</p>
+        </div>
 
       </div>
     </div>
