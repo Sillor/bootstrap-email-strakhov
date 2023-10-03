@@ -40,12 +40,44 @@
   <div class="container-fluid ps-4 pe-4 p-sm-3 pt-sm-0">
     <div class="row">
       <!-- button side menu -->
-      <div class="col-2 d-none d-md-block align-items-center button-menu">
+      <div class="col-2 d-none d-md-block button-menu">
         <button class="btn rounded-5 w-100">Inbox</button>
         <button class="btn rounded-5 w-100">Sent</button>
         <button class="btn rounded-5 w-100">Spam</button>
         <button class="btn rounded-5 w-100">Trash</button>
-        <button class="btn rounded-5 w-100 mt-3 btn-primary">Compose</button>
+        <button class="btn rounded-5 w-100 btn-primary" data-bs-toggle="modal" data-bs-target="#composeModal"><i class="bi bi-pencil-square"></i> Compose</button>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="composeModal" tabindex="-1" aria-labelledby="composeModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="composeModalLabel">Compose</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3 row">
+                  <div class="col-auto"><label for="recipient-email" class="col-form-label" placeholder="Hello">To:</label></div>
+                  <div class="col"><input type="text" class="form-control" id="recipient-email"></div>
+                </div>
+                <div class="mb-3 row">
+                  <div class="col-auto"><label for="email-subject" class="col-form-label">Subject:</label></div>
+                  <div class="col"><input type="text" class="form-control" id="email-subject"></div>
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">Message:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Send</button>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- navbar links -->
@@ -55,7 +87,7 @@
           <button class="btn rounded-5 w-100 sandwich-menu-button">Sent</button>
           <button class="btn rounded-5 w-100 sandwich-menu-button">Spam</button>
           <button class="btn rounded-5 w-100 sandwich-menu-button">Trash</button>
-          <button class="btn rounded-5 w-100 sandwich-menu-button mb-3 mt-3 btn-primary">Compose</button>
+          <button class="btn rounded-5 w-100 sandwich-menu-button mb-3 mt-3 btn-primary" data-bs-toggle="modal" data-bs-target="#composeModal"><i class="bi bi-pencil-square"></i> Compose</button>
         </ul>
       </div>
 
@@ -69,7 +101,7 @@
           </div>
         </div>
 
-        <div class="card mb-2 shadow ">
+        <div class="card mb-2 shadow">
           <div class="card-body">
             <h4 class="card-title">🍪 Help Needed for Cookie Chaos!</h4>
             <h6 class="card-subtitle mb-2 text-muted">From: ilovecookies@example.com</h6>
@@ -119,14 +151,19 @@
         </div>
 
         <div class="row m-5">
-          <p>Hi Ipsum Lorem,<br><br>I'm in a bit of a cookie crisis here and could really use your help. I was trying to bake
-            cookies, but they turned out like strange, misshapen blobs that don't even taste good.<br><br>I thought, who better
+          <p>Hi Ipsum Lorem,<br><br>I'm in a bit of a cookie crisis here and could really use your help. I was trying to
+            bake
+            cookies, but they turned out like strange, misshapen blobs that don't even taste good.<br><br>I thought, who
+            better
             to rescue me from this cookie catastrophe than you, the cookie expert? So, I'm reaching out to ask if you
             can come over and save the day. We'll have a good laugh, and hopefully, you can show me how to make cookies
-            that actually look and taste good.<br><br>I've got all the cookie ingredients ready, and we can turn my kitchen
-            into a cookie workshop. It'll be a fun time, and I promise not to take ourselves too seriously.<br><br>Please let
+            that actually look and taste good.<br><br>I've got all the cookie ingredients ready, and we can turn my
+            kitchen
+            into a cookie workshop. It'll be a fun time, and I promise not to take ourselves too
+            seriously.<br><br>Please let
             me know if you can swing by and help me out. I'd really appreciate it!<br><br>Looking forward to your cookie
-            expertise,<br><br>Lorem Ipsum<br><br>P.S. Bring your appetite, and we'll taste-test our way through this!</p>
+            expertise,<br><br>Lorem Ipsum<br><br>P.S. Bring your appetite, and we'll taste-test our way through this!
+          </p>
         </div>
 
       </div>
