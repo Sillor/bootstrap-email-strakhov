@@ -31,3 +31,7 @@ body {
 .bi-list, .sandwich-menu-button{
     color: white !important;
 }
+
+.cookie-image {
+    max-width: 800px !important;
+}
