@@ -41,19 +41,30 @@
     <div class="row">
       <!-- Button Side Menu -->
       <div class="col-3 col-lg-2 d-none d-md-block button-menu">
-        <button class="btn rounded-5 w-100">Inbox</button>
-        <button class="btn rounded-5 w-100">Sent</button>
-        <button class="btn rounded-5 w-100">Spam</button>
-        <button class="btn rounded-5 w-100">Trash</button>
+        <button class="btn rounded-5 w-100 btn-primary" data-bs-toggle="modal" data-bs-target="#tbaModal">Inbox</button>
+        <button class="btn rounded-5 w-100 btn-primary" data-bs-toggle="modal" data-bs-target="#tbaModal">Sent</button>
+        <button class="btn rounded-5 w-100 btn-primary" data-bs-toggle="modal" data-bs-target="#tbaModal">Spam</button>
+        <button class="btn rounded-5 w-100 btn-primary" data-bs-toggle="modal" data-bs-target="#tbaModal">Trash</button>
         <button class="btn rounded-5 w-100 btn-primary" data-bs-toggle="modal" data-bs-target="#composeModal"><i class="bi bi-pencil-square"></i> Compose</button>
       </div>
 
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+        <ul class="navbar-nav">
+          <button class="btn rounded-5 w-100 sandwich-menu-button" data-bs-toggle="modal" data-bs-target="#tbaModal">Inbox</button>
+          <button class="btn rounded-5 w-100 sandwich-menu-button" data-bs-toggle="modal" data-bs-target="#tbaModal">Sent</button>
+          <button class="btn rounded-5 w-100 sandwich-menu-button" data-bs-toggle="modal" data-bs-target="#tbaModal">Spam</button>
+          <button class="btn rounded-5 w-100 sandwich-menu-button" data-bs-toggle="modal" data-bs-target="#tbaModal">Trash</button>
+          <button class="btn rounded-5 w-100 sandwich-menu-button mb-3 mt-3 btn-primary" data-bs-toggle="modal" data-bs-target="#composeModal"><i class="bi bi-pencil-square"></i> Compose</button>
+        </ul>
+      </div>
+
       <!-- Compose Modal -->
-      <div class="modal fade" id="composeModal" tabindex="-1" aria-labelledby="composeModalLabel" aria-hidden="true">
+      <div class="modal fade" id="composeModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="composeModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="composeModalLabel">Compose</h1>
+              <h1 class="modal-title fs-5" id="composeModalLabel"><i class="bi bi-pencil-square"></i> Compose</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -80,15 +91,22 @@
         </div>
       </div>
 
-      <!-- Navbar Links -->
-      <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
-        <ul class="navbar-nav">
-          <button class="btn rounded-5 w-100 sandwich-menu-button">Inbox</button>
-          <button class="btn rounded-5 w-100 sandwich-menu-button">Sent</button>
-          <button class="btn rounded-5 w-100 sandwich-menu-button">Spam</button>
-          <button class="btn rounded-5 w-100 sandwich-menu-button">Trash</button>
-          <button class="btn rounded-5 w-100 sandwich-menu-button mb-3 mt-3 btn-primary" data-bs-toggle="modal" data-bs-target="#composeModal"><i class="bi bi-pencil-square"></i> Compose</button>
-        </ul>
+      <!-- To be Added Modal -->
+      <div class="modal fade" id="tbaModal" tabindex="-1" aria-labelledby="tbaModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="tbaModalLabel"><i class="bi bi-exclamation-triangle-fill"></i> TBA</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>This functionality is not yet implemented.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Email List -->
