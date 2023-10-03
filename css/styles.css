@@ -28,10 +28,21 @@ body {
     margin-bottom: 6px;
 }
 
-.bi-list, .sandwich-menu-button{
+.bi-list, .sandwich-menu-button, footer{
     color: white !important;
 }
 
 .cookie-image {
     max-width: 800px !important;
+}
+
+footer {
+    display: flex;
+    position: fixed !important;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #141414;
+    padding: 8px;
 }
