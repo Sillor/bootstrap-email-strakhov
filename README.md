@@ -26,3 +26,10 @@
 * 5pm: Devlog update
   * Moved from Google Docs to git readme file
   * Added entries for 9/27, 9/30, 02/10
+* 5:30pm - 8:30pm: Final draft
+  * Added functionality to compose button
+  * Added cards to email-list
+  * Added sample email on the third column (large view)
+  * Added To Be Added modal for unusable buttons
+  * Added footer
+  * LOTS of styling
